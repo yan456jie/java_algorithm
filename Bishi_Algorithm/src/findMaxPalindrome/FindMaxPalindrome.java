@@ -9,7 +9,7 @@ import java.util.Stack;
 public class FindMaxPalindrome {
 
 	//static String ss = "aaabcadasabcddcbaddbc";
-	static String ss = "edaabcbaded";
+	static String ss = "sogou";
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		find(ss.toCharArray());
