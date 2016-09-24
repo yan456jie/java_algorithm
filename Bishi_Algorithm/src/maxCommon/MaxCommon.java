@@ -55,6 +55,8 @@ public class MaxCommon {
 			}
 		}
 		print(b);
+		System.out.println();
+		print(path);
 		findPath(s1, b, b.length-1, b[0].length-1);
 		return "";
 	}
