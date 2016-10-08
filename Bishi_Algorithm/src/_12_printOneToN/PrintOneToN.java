@@ -25,7 +25,7 @@ public class PrintOneToN {
 			System.out.print(rmZero(s)+" ");
 			return;
 		}
-		for(int i=0; i<data.length; i++){
+		for(int i=1; i<data.length; i++){
 			fun(data, s+data[i], k+1, n);
 		}
 	}
