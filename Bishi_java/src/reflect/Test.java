@@ -1,16 +1,19 @@
 package reflect;
 
 import java.lang.reflect.Method;
-
+/**
+java的反射用法：(异常请自行处理)
+①找到类：Class cl = Class.forName("java.util.Date");
+②创建对象(要求这个类中含有空参数的构造方法)：Object obj = cl.newInstence();
+③根据名称和参数找方法：Method method1 = cl.getMethod("getTime");//如果没有参数不用写第二个参数如果有参数的如：Method method2 = cl.getMethod("setTime",long.class);
+④在某个对象上面执行方法，Object result = method1.invoke(obj);//如果有参数的Object result = method2.invoke(obj,21317362721);
+执行的方如果有返回值，将返回值返回，否则返回null
+ */
 public class Test {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
         show("yerasel.Person");
     }
-
     private static void show(String name) {
         try {
             // JVM将使用类A的类装载器,将类A装入内存(前提是:类A还没有装入内存),不对类A做类的初始化工作
